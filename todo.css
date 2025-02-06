@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 300px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field */
+input {
+    width: 70%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Add button */
+button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left; /* Align list items to the left */
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between task and delete button */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Verdana', sans-serif; /* Change font family */
+}
+
+/* Align checkbox and text */
+.task-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allows task text to take available space */
+}
+
+/* Completed tasks */
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px; /* Adds space between task text and delete button */
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
